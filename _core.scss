@@ -1,0 +1,21 @@
+html {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $core-font-family;
+  margin: 0px;
+}
+
+html, body {
+  height: 100%;
+}

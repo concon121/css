@@ -1,0 +1,16 @@
+li {
+  list-style-type: none;
+}
+
+.nav--top ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.nav--top li {
+  display: inline;
+  height: $navHeight;
+  vertical-align: middle;
+}

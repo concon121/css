@@ -1,0 +1,11 @@
+.content {
+  @include container($susy-columns);
+  @include bleed($susy-columns of $susy-columns);
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  $main-columns: 10;
+  @include span-columns($main-columns omega, $susy-break-point);
+}

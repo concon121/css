@@ -1,0 +1,48 @@
+@include at-breakpoint($susy-break-point) {
+
+  .nav {
+
+    &--top {
+      @include prefix(2, $susy-break-point);
+    }
+
+    &--side {
+      height: 100%;
+      &--left {
+        @include span-columns(2, $susy-break-point);
+        float: left;
+      }
+
+    }
+  }
+
+}
+
+//%sideNavSize {
+//  width: $navWidth;
+//  height: 100%;
+//}
+
+//.nav {
+
+//  &--side {
+
+//    &--left {
+//      @extend %sideNavSize;
+//      float: left;
+//    }
+
+//    &--right {
+//      @extend %sideNavSize;
+//      float: right;
+//    }
+
+//  }
+
+//  &--top {
+//    vertical-align: top;
+//    width: 100%;
+//    height: $navHeight;
+//  }
+
+//}
