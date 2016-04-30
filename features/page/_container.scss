@@ -1,11 +1,37 @@
 .content {
-  @include container($susy-columns);
-  @include bleed($susy-columns of $susy-columns);
   height: 100%;
   width: 100%;
 }
 
-.main {
-  $main-columns: 10;
-  @include span-columns($main-columns omega, $susy-break-point);
+.page-title {
+  @extend %clearfix;
+  text-align: left;
+  padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
+  overflow: hidden;
+}
+
+.section {
+  @extend %clearfix;
+  text-align: left;
+  overflow: hidden;
+  &-title {
+    padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
+    margin-left: $smallSpacer;
+    margin-right: $smallSpacer;
+    border-bottom: 3px solid $black;
+  }
+  &-content {
+    padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
+  }
+}
+
+p {
+  padding-top: $smallSpacer;
+}
+
+code pre {
+  padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
+  background-color: $grey-dark;
+  color: $grey-light;
+  overflow: scroll;
 }

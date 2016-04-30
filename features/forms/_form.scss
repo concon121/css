@@ -1,22 +1,25 @@
-form {
-  @extend %max;
-  padding: 25px;
+%max {
+  width: 100%;
 }
 
-.form--max {
+form {
   @extend %max;
+  @extend %clearfix;
+  padding: 25px;
 }
 
 %form-item-width {
   @media screen and (max-width: $landscape-tablet) {
     width: 100%;
   }
+
   @media screen and (min-width: $landscape-tablet) {
-    width:50%;
+    width: 50%;
   }
 }
 
-.formItem {
+.form-item {
+  //width: 100%;
   @extend %form-item-width;
   float:left;
   display:block;

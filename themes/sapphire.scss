@@ -1,24 +1,35 @@
+@import "../helpers/_color";
+
+$themePrimary: $blue-light;
+$themeSecondary: $blue;
+$themeBase: $white;
+
 body {
-  background-color: $blue-light;
+  background-color: $themeBase;
 }
 
 .nav {
-  background-color: $blue-dark;
-  color: $white;
+  background-color: $themePrimary;
+  color: $themeBase;
 
   a {
-    color: $white;
+    color: $themeBase;
   }
 
   a:hover {
-    color: $blue-light;
+    color: $grey-light;
   }
 
   a:visited {
-    color: $white;
+    color: $themeBase;
   }
 }
 
 .pageHeading {
-  background-color: $blue-light;
+  background-color: $themeBase;
+}
+
+.footer {
+  background-color: $themePrimary;
+  color: $themeBase;
 }

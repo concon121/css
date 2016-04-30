@@ -1,48 +1,84 @@
-@include at-breakpoint($susy-break-point) {
+.nav {
 
-  .nav {
+  @media screen and (min-width: $landscape-tablet) {
+    padding-top: $bigSpacer;
+    padding-left: $bigSpacer;
+  }
 
-    &--top {
-      @include prefix(2, $susy-break-point);
+  &:before {
+    @media screen and (max-width: $landscape-tablet) {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 30px;
+      height: 5px;
+      background: black;
+      box-shadow:
+        0 20px 0 0 black,
+        0 10px 0 0 black;
+    }
+  }
+
+  &-side {
+
+    @media screen and (max-width: $landscape-tablet) {
+      position: relative;
+      top: 0;
+      height: $navHeight;
+      width: 100%;
     }
 
-    &--side {
+    @media screen and (min-width: $landscape-tablet) {
+      position: relative;
       height: 100%;
-      &--left {
-        @include span-columns(2, $susy-break-point);
-        float: left;
-      }
-
+      min-height: 100%;
+      width: $navWidth;
+      float: left;
+      top: 0;
+      left: 0;
+      bottom: 0;
     }
+
   }
 
 }
 
-//%sideNavSize {
-//  width: $navWidth;
-//  height: 100%;
-//}
+.nav ul {
+  @media screen and (min-width: $landscape-tablet) {
+    padding-left: $smallSpacer;
+    background-color: $themePrimary;
+  }
+  @media screen and (max-width: $landscape-tablet) {
+    background-color: $themePrimary;
+  }
+}
 
-//.nav {
 
-//  &--side {
+.nav ul {
+  @media screen and (min-width: $landscape-tablet) {
 
-//    &--left {
-//      @extend %sideNavSize;
-//      float: left;
-//    }
+  }
+}
 
-//    &--right {
-//      @extend %sideNavSize;
-//      float: right;
-//    }
+.nav ul li {
+  @media screen and (max-width: $landscape-tablet) {
+    width: 100%;
+    text-align: center;
+    padding-top: $tinySpacer;
+    padding-bottom: $tinySpacer;
+  }
+}
 
-//  }
+.nav ul li:hover {
+  @media screen and (max-width: $landscape-tablet) {
+    background-color: $themeSecondary;
+    font-weight: bold;
+  }
+}
 
-//  &--top {
-//    vertical-align: top;
-//    width: 100%;
-//    height: $navHeight;
-//  }
-
-//}
+.nav ul li a:hover {
+  @media screen and (max-width: $landscape-tablet) {
+    color: $themeBase !important;
+  }
+}

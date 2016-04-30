@@ -1,8 +1,6 @@
+@import "compass/reset";
+
 @import "helpers/_all";
-@import "thirdparty/_susy";
-@import "thirdparty/_susyone";
 @import "thirdparty/_fonts";
 @import "_core";
 @import "features/_all";
-
-@import "compass/reset";
