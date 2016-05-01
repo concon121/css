@@ -2,7 +2,7 @@
 
   @media screen and (min-width: $landscape-tablet) {
     padding-top: $bigSpacer;
-    padding-left: $bigSpacer;
+    padding-left: $largeSpacer;
   }
 
   &:before {
@@ -74,11 +74,5 @@
   @media screen and (max-width: $landscape-tablet) {
     background-color: $themeSecondary;
     font-weight: bold;
-  }
-}
-
-.nav ul li a:hover {
-  @media screen and (max-width: $landscape-tablet) {
-    color: $themeBase !important;
   }
 }

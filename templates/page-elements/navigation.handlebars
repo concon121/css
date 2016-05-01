@@ -1,0 +1,15 @@
+{{#if nav-items}}
+  <ul>
+    {{#each nav-items}}
+      <li><a href="{{path}}">{{text}}</a>
+      {{#if sublinks}}
+        <ul>
+          {{#each sublinks}}
+            <li><a href="{{path}}">{{text}}</a>
+          {{/each}}
+        </ul>
+      {{/if}}
+      </li>
+    {{/each}}
+  <ul>
+{{/if}}

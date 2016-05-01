@@ -1,3 +1,7 @@
 .nav {
   @extend %clearfix;
 }
+
+#navigation {
+  height: 100%;
+}

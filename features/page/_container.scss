@@ -7,6 +7,7 @@
   @extend %clearfix;
   text-align: left;
   padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
+  margin-bottom: $mediumSpacer;
   overflow: hidden;
 }
 
@@ -18,6 +19,7 @@
     padding: $smallSpacer $smallSpacer $smallSpacer $smallSpacer;
     margin-left: $smallSpacer;
     margin-right: $smallSpacer;
+    margin-bottom: $mediumSpacer;
     border-bottom: 3px solid $black;
   }
   &-content {
